@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\ClientController;
-use App\Http\Controllers\Saudacao;
 use App\Http\Controllers\SiteController;
 use App\Models\Client;
 use Illuminate\Support\Facades\Route;
@@ -22,11 +21,13 @@ Route::get('/sobre', [SiteController::class, 'sobre'])->name('about');
 Route::get('/contato', [SiteController::class, 'contato'])->name('contact');
 Route::get('/servico/{id}', [SiteController::class, 'servico']);
 
-Route::get('/clients', [ClientController::class, 'index'])->name('clients.index');
-Route::get('/clients/create', [ClientController::class, 'create'])->name('clients.create');
-Route::get('/clients/{id}', [ClientController::class, 'show'])->name('clients.show');
-Route::post('/clients', [ClientController::class, 'store'])->name('clients.store');
+// Route::get('/clients', [ClientController::class, 'index'])->name('clients.index');
+// Route::get('/clients/create', [ClientController::class, 'create'])->name('clients.create');
+// Route::get('/clients/{id}', [ClientController::class, 'show'])->name('clients.show');
+// Route::post('/clients', [ClientController::class, 'store'])->name('clients.store');
 
-Route::get('/clients/{id}/edit', [ClientController::class, 'edit'])->name('clients.edit');
-Route::put('/clients/{id}', [ClientController::class, 'update'])->name('clients.update');
-Route::delete('/clients/{id}', [ClientController::class, 'destroy'])->name('clients.destroy');
+// Route::get('/clients/{id}/edit', [ClientController::class, 'edit'])->name('clients.edit');
+// Route::put('/clients/{id}', [ClientController::class, 'update'])->name('clients.update');
+// Route::delete('/clients/{id}', [ClientController::class, 'destroy'])->name('clients.destroy');
+
+Route::resource('clients', ClientController::class);

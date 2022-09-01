@@ -10,24 +10,24 @@
                 </a>
                 Criar novo Cliente
             </h5>
-            <div class="card-body mt-2">
+            <div class="card-body p-4 mt-2">
                 <div class="row ">
                     <div class="col-12 col-md-6 mb-3">
                         <label for="nome" class="form-label">Nome</label>
-                        <input type="nome" placeholder="Insira um nome" class="form-control" name="nome"
+                        <input type="nome" required placeholder="Insira um nome" class="form-control" name="nome"
                             id="nome" aria-describedby="nome">
                     </div>
 
                     <div class="col-12 col-md-6 mb-3">
                         <label for="endereco" class="form-label">Endereço</label>
-                        <input rows="5" type="text" placeholder="Insira um endereço" class="form-control"
+                        <input rows="5" type="text" required placeholder="Insira um endereço" class="form-control"
                             name="endereco" id="endereco" aria-describedby="endereco">
                     </div>
                 </div>
 
                 <div class="mb-3">
                     <label for="observacao" class="form-label">Observação</label>
-                    <textarea rows="5" placeholder="Insira uma observação" class="form-control" name="observacao" id="observacao"
+                    <textarea rows="5" required placeholder="Insira uma observação" class="form-control" name="observacao" id="observacao"
                         aria-describedby="endereco"></textarea>
                 </div>
 

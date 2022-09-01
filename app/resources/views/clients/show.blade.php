@@ -8,7 +8,7 @@
             </a>
             Detalhe do Cliente {{ $client->nome }}
         </h5>
-        <div class="card-body">
+        <div class="card-body text-center">
             <p><strong>ID: </strong>{{ $client->id }}</p>
             <p><strong>Nome: </strong>{{ $client->nome }}</p>
             <p><strong>Endereço: </strong>{{ $client->endereco }}</p>

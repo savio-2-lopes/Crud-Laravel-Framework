@@ -13,13 +13,12 @@ class SiteController extends Controller
 
     public function sobre()
     {
-        $soma = 10 + 9;
-        echo "Conteúdo dinâmico sobre $soma";
+        return view('sobre');
     }
 
     public function contato()
     {
-        echo "Conteúdo dinâmico - Contato";
+        return view('contato');
     }
 
     public function servico(int $id)

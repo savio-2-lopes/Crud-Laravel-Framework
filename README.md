@@ -1,4 +1,4 @@
-# Simple CRUD Laravel
+# Development CRUD using the Laravel Framework
 
 <p align="center">
     <img alt="CRUD Laravel" title="CRUD Laravel" src="./.github/crud.gif" width="900px" />

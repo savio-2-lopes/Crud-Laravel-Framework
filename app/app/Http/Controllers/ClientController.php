@@ -34,4 +34,30 @@ class ClientController extends Controller
         Client::create($dados);
         return redirect('/clients');
     }
+
+    public function edit(int $id)
+    {
+        $client = Client::find($id);
+        return view('clients.edit', [
+            'client' => $client
+        ]);
+    }
+
+    public function update(int $id, Request $request)
+    {
+        $client = Client::find($id);
+        $client->update([
+            'nome' => $request->nome,
+            'endereco' => $request->endereco,
+            'observacao' => $request->observacao
+        ]);
+        return redirect('/clients');
+    }
+
+    public function destroy(int $id)
+    {
+        $client = Client::find($id);
+        $client->delete();
+        return redirect('/clients');
+    }
 }

@@ -27,4 +27,11 @@ class ClientController extends Controller
     {
         return view('clients.create');
     }
+
+    public function store(Request $request)
+    {
+        $dados = $request->except('_token');
+        Client::create($dados);
+        return redirect('/clients');
+    }
 }

@@ -26,13 +26,19 @@
             @foreach ($clients as $client)
                 <tr>
                     <th scope="row">{{ $client->id }}</th>
+                    <td>{{ $client->nome }}</td>
+                    <td>{{ $client->endereco }}</td>
                     <td>
-                        <a href="{{ route('clients.show', $client) }}">
-                            {{ $client->nome }}
+                        <a class="btn btn-outline-secondary rounded-circle" href="{{ route('clients.show', $client) }}">
+                            <i class="fas fa-search-plus"></i>
+                        </a>
+                        <a class="btn btn-outline-primary rounded-circle" href="{{ route('clients.show', $client) }}">
+                            <i class="fas fa-pencil-alt"></i>
+                        </a>
+                        <a class="btn btn-outline-danger rounded-circle" href="{{ route('clients.show', $client) }}">
+                            <i class="fas fa-trash"></i>
                         </a>
                     </td>
-                    <td>{{ $client->endereco }}</td>
-                    <td></td>
                 </tr>
             @endforeach
         </tbody>

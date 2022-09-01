@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ClientController;
 use App\Http\Controllers\Saudacao;
 use App\Http\Controllers\SiteController;
 use App\Models\Client;
@@ -21,6 +22,5 @@ Route::get('/sobre', [SiteController::class, 'sobre']);
 Route::get('/contato', [SiteController::class, 'servico']);
 Route::get('/servico/{id}', [SiteController::class, 'servico']);
 Route::get('/saudacao/{nome?}', Saudacao::class);
-Route::get('/clients', function() {
-  dd(Client::get());
-});
+Route::get('/clients', [ClientController::class, 'index'])->name('clients.index');
+Route::get('/clients/{id}', [ClientController::class, 'show'])->name('clients.show');

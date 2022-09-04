@@ -7,12 +7,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>@yield('titulo')</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
-<body class="bg-dark" style="height: 100vh">
+<body class="bg-indigo">
     <nav class="navbar mb-auto navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="{{ route('index') }}">Crud</a>
+            <a class="navbar-brand" href="{{ route('index') }}">CRUD</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -34,7 +35,7 @@
 
     <footer class="mt-auto text-white-50 text-dark">
         <p>
-            Simples CRUD em Laravel, by <a href="https://www.linkedin.com/in/savio-lopes/"
+            CRUD em Laravel, by <a href="https://www.linkedin.com/in/savio-lopes/"
                 class="text-white">@saviolopes</a>.
         </p>
     </footer>

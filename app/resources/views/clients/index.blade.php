@@ -1,7 +1,7 @@
 @extends('partials/base')
 @section('titulo', 'Lista de Clientes')
 @section('conteudo')
-    <div class="card px-3">
+    <div class="mx-auto col-12 col-md-6 card border-rounded text-center">
         <div class="card-header row">
             <div class="col d-flex align-items-center">
                 <h5>Listagem de Clientes</h5>

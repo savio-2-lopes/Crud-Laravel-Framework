@@ -2,8 +2,8 @@
 @section('titulo', 'Criar novo Cliente')
 @section('conteudo')
     <form action="{{ route('clients.store') }}" method="post">
-      @csrf
-        <div class="card">
+        @csrf
+        <div class="mx-auto col-12 col-md-6 card border-rounded">
             <h5 class="card-header">
                 <a href="{{ route('clients.index') }}" class="text-dark text-decoration-none">
                     <i class="fas fa-arrow-left text-dark"></i> &nbsp;
@@ -27,8 +27,8 @@
 
                 <div class="mb-3">
                     <label for="observacao" class="form-label">Observação</label>
-                    <textarea rows="5" required placeholder="Insira uma observação" class="form-control" name="observacao" id="observacao"
-                        aria-describedby="endereco"></textarea>
+                    <textarea rows="5" required placeholder="Insira uma observação" class="form-control" name="observacao"
+                        id="observacao" aria-describedby="endereco"></textarea>
                 </div>
 
                 <div class="d-flex alig-items-center justify-content-center">

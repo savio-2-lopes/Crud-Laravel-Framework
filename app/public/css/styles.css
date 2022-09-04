@@ -1,0 +1,26 @@
+html,
+body {
+    height: 100vh;
+}
+
+.bg-indigo {
+    background-color: #1a252f;
+}
+
+.btn-secondary {
+    background-color: #1a252f !important;
+    border-color: #1a252f !important;
+    transition: 0.5s !important;
+}
+
+.btn-secondary:hover {
+  opacity: 0.8 !important;
+}
+
+.btn-secondary:disabled {
+  opacity: 0.6!important;
+}
+
+.border-rounded {
+  border-radius: 16px !important;
+}

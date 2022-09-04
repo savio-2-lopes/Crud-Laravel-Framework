@@ -4,7 +4,7 @@
     <form action="{{ route('clients.update', $client) }}" method="post">
         @csrf
         @method('PUT')
-        <div class="card">
+        <div class="mx-auto col-12 col-md-6 card border-rounded">
             <h5 class="card-header">
                 <a href="{{ route('clients.index') }}" class="text-dark text-decoration-none">
                     <i class="fas fa-arrow-left text-dark"></i> &nbsp;

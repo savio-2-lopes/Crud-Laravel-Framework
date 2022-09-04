@@ -2,7 +2,7 @@
  @section('titulo', 'Sobre nós')
  @section('conteudo')
      <form method="post">
-         <div class="card">
+         <div class="mx-auto col-12 card border-rounded">
              <h5 class="card-header">
                  <a href="{{ route('index') }}" class="text-dark text-decoration-none">
                      <i class="fas fa-arrow-left text-dark"></i> &nbsp;
@@ -14,7 +14,9 @@
                      <div class="col-12 col-md-6 px-5 d-flex align-items-center">
                          <div>
                              <h2>Qualquer dúvida envie para nós</h2>
-                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, expedita assumenda. Consequuntur porro suscipit velit eum quas expedita quae, incidunt, iure excepturi eius nemo officiis ab ipsam earum et minima!.</p>
+                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, expedita assumenda.
+                                 Consequuntur porro suscipit velit eum quas expedita quae, incidunt, iure excepturi eius
+                                 nemo officiis ab ipsam earum et minima!.</p>
                          </div>
                      </div>
                      <div class="col-12 col-md-6">

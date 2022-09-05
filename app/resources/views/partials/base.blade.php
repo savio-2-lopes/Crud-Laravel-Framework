@@ -8,6 +8,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>@yield('titulo')</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
 
 <body class="bg-indigo">
@@ -21,6 +22,7 @@
             <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link" aria-current="page" href="{{ route('index') }}">Home</a>
+                    <a class="nav-link" aria-current="page" href="{{ route('index') }}">Funcionários</a>
                     <a class="nav-link" aria-current="page" href="{{ route('clients.index') }}">Clientes</a>
                     <a class="nav-link" aria-current="page" href="{{ route('contact') }}">Contato</a>
                     <a class="nav-link" aria-current="page" href="{{ route('about') }}">Sobre</a>
@@ -29,15 +31,12 @@
         </div>
     </nav>
 
-    <main class="container text-dark d-flex text-left aligns-items-center justify-content-center w-100 h-100 mx-auto flex-column">
+    <main class="text-dark d-flex text-left aligns-items-center justify-content-center w-100 h-100 mx-auto flex-column">
         @yield('conteudo')
     </main>
 
-    <footer class="mt-auto text-white-50 text-dark">
-        <p>
-            CRUD em Laravel, by <a href="https://www.linkedin.com/in/savio-lopes/"
-                class="text-white">@saviolopes</a>.
-        </p>
+    <footer class="mt-auto mb-auto text-center py-3 text-dark bg-light">
+        CRUD em Laravel, by <a href="https://www.linkedin.com/in/savio-lopes/">@saviolopes</a>.
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
